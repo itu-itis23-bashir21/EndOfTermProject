@@ -1,0 +1,206 @@
+body {
+    font-family: 'Times New Roman', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: oblique;
+    text-align: center;
+    color: #000000; 
+    background-color: #ffffff;
+    font-size: 2em; 
+    font-weight: bold; 
+    margin-bottom: 10px; 
+  }
+
+  h2{
+    transform: translate(35%,0%);
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: underline;
+    color: #ffffff; 
+    background-color: #e4e4e400;
+    font-size: 2.5em; 
+    margin-bottom: 10px; 
+  }
+header {
+    text-align: center;
+    background-color: #000000;
+    padding: 20px;
+    margin: 0;
+}
+
+.border {
+    border: 2px solid #adadad; 
+    padding: 5px; 
+    margin: auto;
+    display: inline-block; 
+  }
+
+  .msg {
+    font-family: monospace;
+    border: 2px solid #adadad; 
+    padding: 5px; 
+    margin-bottom: 40px;
+    display: inline-block; 
+    background-color: #3333339e;
+    color: #fff;
+  }
+
+  .game {
+    border: 5px solid #04fbff; 
+    padding: 100px; 
+    margin: auto;
+    display: inline-block; 
+    margin-left: 250px;
+  }
+
+fieldset {
+    border: 1px solid #009688; 
+    padding: 10px; 
+    width: auto; 
+   margin: 0; 
+  }
+  
+  legend {
+    padding: 0 10px; 
+    font-weight: bold; 
+  }
+
+
+.navbar{
+    font-size: 20px;
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #adadad00;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.aboutme{
+    font-size: x-large;
+    background-color: #ffffff06;
+    color: #fff;
+}
+#personal-info img {
+    border-radius: 10%;
+    margin-top: 10px;
+    width: 200px; 
+    height: auto; 
+}
+
+
+#memory-game-container {
+    background-color: #38383895;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.memory-card {
+    width: 100px; 
+    height: 100px; 
+    cursor: pointer;
+}
+
+#score-display {
+    font-size: 18px;
+    font-weight: bold;
+    color: #009688; 
+    margin-top: 10px;
+}
+
+.msg{
+    text-align: center;
+    font-size: 16px;
+}
+button {
+    text-transform: uppercase;
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background-color: #333333ba;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+span{
+    background: #009688;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.5s;
+    z-index: -2;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover span{
+    border: none;
+}
+
+.banner{
+    width: 100%;
+    height: 110vh;
+    background-image: linear-gradient(rgba(29, 29, 29, 0.375),rgba(55, 55, 55, 0.439)),url(background.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    position: static;
+    bottom: 0;
+    width: 100%;
+}
