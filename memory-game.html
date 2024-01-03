@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="banner">
+
+    
+    <h1>Memory Game</h1>
+
+
+    <div class="navbar">
+    <nav>
+        <ul>
+            <li><a href="index.html">About Me</a></li>
+            <li><a href="#memory-game">Memory Game</a></li>
+        </ul>
+    </nav>
+    </div>
+<div class="msg">
+<p>
+    Below is a memory game that i have created. In this game my name, IBRAHIM, is shown to you and then is shuffled and hidden. You need to guess the letters in the correct order to win. Each correct answer gets you 20 points, but be aware, a single wrong answer means GAME OVER.
+</p>
+<p>
+    GOOD LUCK, HAVE FUN!
+</p>
+</div>
+<div class="game">
+    <div id="memory-game-container">
+        <!-- Add image paths here using the <img> tag -->
+        <img src="Letter_I.svg" alt="I" class="memory-card" onclick="selectCard(0)">
+        <img src="Letter_B.svg" alt="B" class="memory-card" onclick="selectCard(1)">
+        <img src="Letter_R.svg" alt="R" class="memory-card" onclick="selectCard(2)">
+        <img src="Letter_A.svg" alt="A" class="memory-card" onclick="selectCard(3)">
+        <img src="Letter_H.svg" alt="H" class="memory-card" onclick="selectCard(4)">
+        <img src="Letter_I.svg" alt="I" class="memory-card" onclick="selectCard(5)">
+        <img src="Letter_M.svg" alt="M" class="memory-card" onclick="selectCard(6)">
+    </div>
+
+    
+
+    <p id="score-display">Score: 0</p>
+    <div>
+        <button onclick="startGame()"><span></span>Start Game</button>
+        <button onclick="restartGame()"><span></span>Restart Game</button>
+    </div>
+</div>
+</div>
+    <script src="script.js"></script>
+    <footer>
+        <p>&copy; 2024 Ibrahim's Memory Game Website. All rights reserved.</p>
+      </footer>
+</body>
+</html>
